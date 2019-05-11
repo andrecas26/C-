@@ -1,0 +1,7 @@
+C:\Users\18069\source\repos\cSharpProgram\manyMethonds\bin\Debug\manyMethonds.exe.config
+C:\Users\18069\source\repos\cSharpProgram\manyMethonds\bin\Debug\manyMethonds.exe
+C:\Users\18069\source\repos\cSharpProgram\manyMethonds\bin\Debug\manyMethonds.pdb
+C:\Users\18069\source\repos\cSharpProgram\manyMethonds\obj\Debug\manyMethonds.csprojAssemblyReference.cache
+C:\Users\18069\source\repos\cSharpProgram\manyMethonds\obj\Debug\manyMethonds.csproj.CoreCompileInputs.cache
+C:\Users\18069\source\repos\cSharpProgram\manyMethonds\obj\Debug\manyMethonds.exe
+C:\Users\18069\source\repos\cSharpProgram\manyMethonds\obj\Debug\manyMethonds.pdb

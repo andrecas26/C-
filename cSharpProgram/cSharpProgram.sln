@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.352
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "manyMethonds", "manyMethonds\manyMethonds.csproj", "{7A4FCCEC-0FD7-46F0-9A7C-1E923E262A91}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pigLatin", "pigLatin\pigLatin.csproj", "{09057890-74EE-4EF0-A48E-4A2E4BC86E5B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7A4FCCEC-0FD7-46F0-9A7C-1E923E262A91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A4FCCEC-0FD7-46F0-9A7C-1E923E262A91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A4FCCEC-0FD7-46F0-9A7C-1E923E262A91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A4FCCEC-0FD7-46F0-9A7C-1E923E262A91}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09057890-74EE-4EF0-A48E-4A2E4BC86E5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09057890-74EE-4EF0-A48E-4A2E4BC86E5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09057890-74EE-4EF0-A48E-4A2E4BC86E5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09057890-74EE-4EF0-A48E-4A2E4BC86E5B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4747F874-0800-4CCF-A5EF-65198F711384}
+	EndGlobalSection
+EndGlobal
