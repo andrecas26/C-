@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{19857D5B-B8AB-4A91-B964-3A4C3C546BF0}</ProjectGuid>
+    <ProjectGuid>{3D52EA53-0E63-456A-BCB6-0472D3377861}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>manyMethods</RootNamespace>
-    <AssemblyName>manyMethods</AssemblyName>
+    <RootNamespace>Rock__Paper__Scissors</RootNamespace>
+    <AssemblyName>Rock, Paper, Scissors</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
