@@ -5,3 +5,10 @@ C:\Users\18069\source\repos\cSharpProgram\pigLatin\obj\Debug\pigLatin.csproj.Cor
 C:\Users\18069\source\repos\cSharpProgram\pigLatin\obj\Debug\pigLatin.exe
 C:\Users\18069\source\repos\cSharpProgram\pigLatin\obj\Debug\pigLatin.pdb
 C:\Users\18069\source\repos\cSharpProgram\pigLatin\obj\Debug\pigLatin.csprojAssemblyReference.cache
+C:\Users\18069\Documents\DevFolder\CSharp\cSharpProgram\pigLatin\obj\Debug\pigLatin.csproj.CoreCompileInputs.cache
+C:\Users\18069\Documents\DevFolder\CSharp\cSharpProgram\pigLatin\obj\Debug\pigLatin.csprojAssemblyReference.cache
+C:\Users\18069\Documents\DevFolder\CSharp\cSharpProgram\pigLatin\bin\Debug\pigLatin.exe.config
+C:\Users\18069\Documents\DevFolder\CSharp\cSharpProgram\pigLatin\bin\Debug\pigLatin.exe
+C:\Users\18069\Documents\DevFolder\CSharp\cSharpProgram\pigLatin\bin\Debug\pigLatin.pdb
+C:\Users\18069\Documents\DevFolder\CSharp\cSharpProgram\pigLatin\obj\Debug\pigLatin.exe
+C:\Users\18069\Documents\DevFolder\CSharp\cSharpProgram\pigLatin\obj\Debug\pigLatin.pdb

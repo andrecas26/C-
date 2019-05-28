@@ -10,7 +10,7 @@ namespace manyMethods
     {
         static void Main(string[] args)
         {
-            age();
+            Addition();
         }
         public static void Hello()
         {

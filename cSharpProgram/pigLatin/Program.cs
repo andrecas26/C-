@@ -8,33 +8,44 @@ namespace pigLatin
 {
     class Program
     {
-        static void main(string[] args)
-        {/*
+        static void Main(string[] args)
+        {
             Console.WriteLine("Enter a word");
-            sting input = Console.ReadLine();
-        //Translate to word to pig lating
-        string convertedWord = toPigLatin(input);
-        Console.WriteLine(conbertedWord);*/
-        }
-        
-/*
-    public static void TopigLatin(sting word)
-        char[] vowels = { 'A', 'E', 'I', 'O', 'U', 'a', 'e', 'i', 'o', 'u' };
-    //starts with vowel and ends in vowel
-    bool startWithVowel = false;
-    bool endWithVowel = false;
+            string input = Console.ReadLine();
+            Console.WriteLine(ToPigLatin(input));
+            Console.Read();
 
-    for (int i = 0; i<vowels.Length -1; i++)
+        }
+        public static string ToPigLatin(string word)
         {
-        string currentVowel = vowels[i].ToString();
-    // no vowel found
-    if(!foundVowel)
-        { return (word + "ay")
-        else
-        {
-        int firstVowelPosition = word.Indexofany(vowel);
-    string firstHalf = word.Substring(0, firstVowelPosition);
-    string secondHalf = word.Substring(firstVowelPosition);
-    return (secondHalf + firstHalf + "ay");*/
-}
+            char[] vowels = { 'A', 'E', 'I', 'O', 'U', 'a', 'e', 'i', 'o', 'u' };
+            char[] character = { 'b', 'c', 'd', 'f', 'g', 'h', 'j', 'k', 'l', 'm', 'n', 'p', 'q', 'r', 's', 't', 'v', 'w', 'x', 'y', 'z' };
+
+            int firstVowelPosition = word.IndexOfAny(vowels);
+            char firstLetter = word[0];
+            char lastLetter = word[word.Length - 1];
+            //If a word starts and ends in a vowel 
+            if (vowels.Contains(firstLetter) && vowels.Contains(lastLetter))
+            {
+                return (word + "yay");
+            }
+            else if (vowels.Contains(firstLetter) && (character.Contains(lastLetter)))
+            {
+                return (word + "ay");
+            }
+            else if (firstVowelPosition == -1)  // no vowel in the word
+            {
+                return (word + "ay");
+            }
+            else if (firstVowelPosition > -1 && character.Contains(firstLetter))
+            {
+                word = word.Substring(firstVowelPosition) +
+                    word.Substring(0, firstVowelPosition) + "ay";
+
+                return word;
+
+
+            } return word;
+        }
+    }
 }
