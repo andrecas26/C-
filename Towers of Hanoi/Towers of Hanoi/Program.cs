@@ -52,7 +52,7 @@ namespace Towers_of_Hanoi
             Console.WriteLine("You Won!!!");
         }
 
-        public static bool GameOver()//Game over if all four stacks are on B or C 
+        public static bool GameOver()//Game over if all four stacks are on C 
         {
             if (stacks["C"].Count == 4)
             {
