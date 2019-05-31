@@ -1,0 +1,2 @@
+C:\Users\18069\Documents\DevFolder\CSharp\Towers of Hanoi\Towers of Hanoi\obj\Debug\Towers of Hanoi.csprojAssemblyReference.cache
+C:\Users\18069\Documents\DevFolder\CSharp\Towers of Hanoi\Towers of Hanoi\obj\Debug\Towers of Hanoi.csproj.CoreCompileInputs.cache
