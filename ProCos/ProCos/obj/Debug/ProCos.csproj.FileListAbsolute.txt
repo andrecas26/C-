@@ -1,0 +1,7 @@
+C:\Users\18069\Documents\DevFolder\CSharp\ProCos\ProCos\bin\Debug\ProCos.exe.config
+C:\Users\18069\Documents\DevFolder\CSharp\ProCos\ProCos\bin\Debug\ProCos.exe
+C:\Users\18069\Documents\DevFolder\CSharp\ProCos\ProCos\bin\Debug\ProCos.pdb
+C:\Users\18069\Documents\DevFolder\CSharp\ProCos\ProCos\obj\Debug\ProCos.csprojAssemblyReference.cache
+C:\Users\18069\Documents\DevFolder\CSharp\ProCos\ProCos\obj\Debug\ProCos.csproj.CoreCompileInputs.cache
+C:\Users\18069\Documents\DevFolder\CSharp\ProCos\ProCos\obj\Debug\ProCos.exe
+C:\Users\18069\Documents\DevFolder\CSharp\ProCos\ProCos\obj\Debug\ProCos.pdb

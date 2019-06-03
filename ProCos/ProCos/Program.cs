@@ -34,20 +34,30 @@ namespace ProCos
 
     public class book
     {
-        public string title;
-        public string authors;
-        public int pages;
-        public int Sku;
-        public string publisher;
-        public int price;
+        public string title { get; set; }
+        public string authors { get; set; }
+        public int pages { get; set; }
+        public int sku { get; set; }
+        public string publisher { get; set; }
+        public int price { get; set; }
+
+        public book( string title, string authors, int pages, int sku, string publisher, int price)
+        {
+
+        }
     }
 
     public class airplane
     {
-        public string Manufacturer;
-        public string model;
-        public string variant;
-        public int capacity;
-        public int engines;
+        public string manufacturer { get; set; }
+        public string model { get; set; }
+        public string variant { get; set; }
+        public int capacity { get; set; }
+        public int engines { get; set; }
+
+        public airplane (string manufacturer, string model, string variant, int capacity, int engines)
+        {
+
+        }
     }
 }
