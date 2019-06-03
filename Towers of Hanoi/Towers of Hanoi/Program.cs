@@ -8,26 +8,25 @@ namespace Towers_of_Hanoi
 {
     class Program
     {
-        static void Main(string[] args);
 
-
-        // Create Board using empty B and C stack
-        static Program()
-        {
-            stacks = new Dictionary<string, Stack<int>> stacks;
+        static Dictionary<string, Stack<int>> board = new Dictionary<string, Stack<int>>()
             {
-                { "A", new Stack<int>() { 4, 3, 2, 1 } };
+                { "A", new Stack<int>()  },
                 { "B", new Stack<int>() { } },
-            { "C", new Stack<int>() { } }
+                { "C", new Stack<int>() { } }
             };
 
-        }
 
+        //Create Board using empty B and C
         public static void Main()
-        {//while the game is not over
+        {   //setting up board
+            for (int i = 4; i > 0; i--)
+            {
+                board["A"].Push(i);
+            }
+            //while the game is not over
             while (!GameOver())
             {
-                Console.Clear();
 
                 PrintStacks();
 
@@ -37,9 +36,9 @@ namespace Towers_of_Hanoi
                 Console.WriteLine("Enter Finish Stack:");
                 string finish = Console.ReadLine();
 
-                if (isLegal(start, finish))
+                if (isLegalMove(start, finish))
                 {
-                    movePiece(start, finish);
+                    moveBlock(start, finish);
                 }
                 else
                 {
@@ -47,14 +46,10 @@ namespace Towers_of_Hanoi
                 }
 
             }
-
-            PrintStacks();
-            Console.WriteLine("You Won!!!");
         }
-
-        public static bool GameOver()//Game over if all four stacks are on C 
+        public static bool GameOver()//Game over if all four stacks are on B or C 
         {
-            if (stacks["C"].Count == 4)
+            if (board["C"].Count == 4 || board["B"].Count == 4)
             {
                 return true;
             }
@@ -66,27 +61,27 @@ namespace Towers_of_Hanoi
 
         public static void moveBlock(string start, string finish)// need to use pop to get top disc
         {
-            Stack<int> startStack = stacks[start];
-            Stack<int> finishStack = stacks[finish];
+            Stack<int> startStack = board[start];
+            Stack<int> finishStack = board[finish];
 
-            int movingBlock = startStack[startStack.Count - 1];
+            int movingBlock = startStack.Peek();//[startStack.Count - 1];
 
-            finishStack.Add(movingBlock);
-            startStack.Remove(movingBlock);
+            finishStack.Push(movingBlock);
+            startStack.Pop();
         }
 
         public static bool isLegalMove(string start, string finish)// checks if move is legal
         {
-            if (stacks[finish].Count == 0)
+            if (board[finish].Count == 0)
             {
                 return true;
             }
 
-            Stack<int> startStack = stacks[start];
-            Stack<int> finishStack = finishStack = stacks[finish];
+            Stack<int> startStack = board[start];
+            Stack<int> finishStack = board[finish];
 
-            int movingBlock = startStack[startStack.Count - 1];
-            int finishStackLastBlock = finishStack[finishStack.Count - 1];
+            int movingBlock = startStack.Peek();
+            int finishStackLastBlock = finishStack.Peek();
 
             if (movingBlock < finishStackLastBlock)
             {
@@ -102,15 +97,12 @@ namespace Towers_of_Hanoi
         public static void PrintStacks()
         {
             string[] letters = new string[] { "A", "B", "C" };
-            for (var i = 0; i < letters.Length; i++)
-            {
-                Stack<string> blocks = new Stack<string>();
-                for (var j = 0; j < stacks[letters[i]].Count; j++)
-                {
-                    blocks.Add(stacks[letters[i]][j].ToString());
-                }
-                Console.WriteLine(letters[i] + ": " + String.Join("|", blocks));
 
+
+            foreach (var tower in board.Keys)
+            {
+                var currentStack = board[tower];
+                Console.WriteLine(tower + ": " + string.Join(", ", currentStack));
             }
         }
     }
