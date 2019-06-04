@@ -20,7 +20,7 @@ namespace Towers_of_Hanoi
         //Create Board using empty B and C
         public static void Main()
         {   //setting up board
-            for (int i = 4; i > 0; i--)
+            for (int i = 1; i < 5; i++)
             {
                 board["A"].Push(i);
             }
