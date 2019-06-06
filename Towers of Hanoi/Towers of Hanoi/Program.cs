@@ -31,10 +31,10 @@ namespace Towers_of_Hanoi
                 PrintStacks();
 
                 Console.WriteLine("Enter Starting Stack");
-                string start = Console.ReadLine();
+                string start = Console.ReadLine().ToUpper();
 
                 Console.WriteLine("Enter Finish Stack:");
-                string finish = Console.ReadLine();
+                string finish = Console.ReadLine().ToUpper();
 
                 if (isLegalMove(start, finish))
                 {
