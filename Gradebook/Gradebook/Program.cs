@@ -7,49 +7,68 @@ using System.Threading.Tasks;
 namespace Gradebook
 {
     class Program
-    {
+    { //Ask user to enter grades in a string. Example ("100 90")
+        static Dictionary<string, int[]> studentGrades = new Dictionary<string, int[]>();
         static void Main(string[] args)
         {
             //Ask User to enter name or quit
-            Console.WriteLine("Enter your name or quit if finished entering grades");
-            string name = Console.ReadLine();
 
-            //Ask user to enter grades in a string. Example ("100 90")
-            Dictionary<string, string> studentGrades = new Dictionary<string, string>();
+            string name = "";
+
             while (name.ToLower() != "quit")
             {
-                //Ask for student grades
+                Console.WriteLine("Enter your name or quit if finished entering grades");
+                name = Console.ReadLine();//Ask for student grades
+                if (name == "quit")
+                {
+                    break;
+                }
+
                 Console.WriteLine("Enter the students grades, separated by a space: ");
-                string strGrades =
-                Console.ReadLine();
-                studentsGrades.Add(name, strGrades);
+                string strGrades = Console.ReadLine();
+                string[] grades = strGrades.Split(' ');
+                int[] studentgrades = new int[grades.Length];
+                for (int i = 0; i < grades.Length; i++)
+                {
+                    studentgrades[i] = Convert.ToInt32(grades[i]);
+                }
+
+                studentGrades.Add(name, studentgrades);
+            }
+            //user entered quit
+            //loop throught the student Grades dictionary
+            foreach (var i in studentGrades.Keys)
+            {
+                int[] grades = studentGrades[i];
+                Console.Write(i+": ");
+                Console.Write(getvalues(grades));
+                Console.WriteLine();
+
             }
 
-            //Ask user for name again
-            Console.WriteLine("Enter students name, or quit to finish");
-            name = Console.ReadLine();
+
         }
-
-        //user entered quit
-        //loop throught the student Grades dictionary
-        foreach (var i in studentGrades.Keys)
+        public static string getvalues(int[]grades)
         {
-            string g = studentGrades[i];
-        //output students name
-        Console.WriteLine($"Name: {i}");
-        Console.WriteLine($"Grades: {studentGrades[i]);
-
-            
-                //Add students name and grades to dictionary
-            Dictionary<string, string[]> categories = new Dictionary<string, string[]>();
-            categories.Add("name", new string[] { });
-            categories.Add("grades", new string[] { });
-            
-            //Repeats the process of dictionary until user enters quit
-            
-            //loops through and prints students name and lowest, highest, and average gradej
-
-
+            int lowestGrade = 100;
+            int highestGrade = 0;
+            int average = 0;
+            string ret;
+        for(int x = 0; x < grades.Length; x++ )
+            {
+                if(highestGrade < grades[x])
+                {
+                    highestGrade = grades[x];
+                }
+                if(lowestGrade > grades[x])
+                {
+                    lowestGrade = grades[x];
+                }
+                average += grades[x];
+            }
+            average = average / grades.Length;
+            ret = "Average: " + average + " low: " + lowestGrade + " high: " + highestGrade;
+            return ret;
         }
     }
 }
