@@ -1,0 +1,7 @@
+C:\Users\18069\Documents\DevFolder\CSharp\todoitems\todoitems\bin\Debug\todoitems.exe.config
+C:\Users\18069\Documents\DevFolder\CSharp\todoitems\todoitems\bin\Debug\todoitems.exe
+C:\Users\18069\Documents\DevFolder\CSharp\todoitems\todoitems\bin\Debug\todoitems.pdb
+C:\Users\18069\Documents\DevFolder\CSharp\todoitems\todoitems\obj\Debug\todoitems.csprojAssemblyReference.cache
+C:\Users\18069\Documents\DevFolder\CSharp\todoitems\todoitems\obj\Debug\todoitems.csproj.CoreCompileInputs.cache
+C:\Users\18069\Documents\DevFolder\CSharp\todoitems\todoitems\obj\Debug\todoitems.exe
+C:\Users\18069\Documents\DevFolder\CSharp\todoitems\todoitems\obj\Debug\todoitems.pdb
