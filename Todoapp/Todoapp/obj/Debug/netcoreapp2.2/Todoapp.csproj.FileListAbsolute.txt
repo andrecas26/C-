@@ -6,3 +6,6 @@ C:\Users\18069\Documents\DevFolder\CSharp\Todoapp\Todoapp\obj\Debug\netcoreapp2.
 C:\Users\18069\Documents\DevFolder\CSharp\Todoapp\Todoapp\obj\Debug\netcoreapp2.2\Todoapp.csproj.CoreCompileInputs.cache
 C:\Users\18069\Documents\DevFolder\CSharp\Todoapp\Todoapp\obj\Debug\netcoreapp2.2\Todoapp.AssemblyInfoInputs.cache
 C:\Users\18069\Documents\DevFolder\CSharp\Todoapp\Todoapp\obj\Debug\netcoreapp2.2\Todoapp.AssemblyInfo.cs
+C:\Users\18069\Documents\DevFolder\CSharp\Todoapp\Todoapp\bin\Debug\netcoreapp2.2\Todoapp.pdb
+C:\Users\18069\Documents\DevFolder\CSharp\Todoapp\Todoapp\obj\Debug\netcoreapp2.2\Todoapp.dll
+C:\Users\18069\Documents\DevFolder\CSharp\Todoapp\Todoapp\obj\Debug\netcoreapp2.2\Todoapp.pdb

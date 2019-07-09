@@ -6,7 +6,8 @@ namespace Todoapp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            App name = new App();
+            name.start();
         }
     }
 }

@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Text;
 using Microsoft.EntityFrameworkCore;
+using System.IO;
+using System.Linq;
 
 namespace Todoapp
 {
@@ -17,22 +19,22 @@ namespace Todoapp
 
         //List all my ToDo itmes
 
-        public List<ToDoItem> GetToDoItems()
+        public List<Todoitem> GetToDoItems()
         {
-            IEnumerable<ToDoItem> list = context.ToDoItems.;
-            return list.ToList;
+            IEnumerable<Todoitem> list = context.ToDoList;
+            return list.ToList();
         }
 
         public void AddItem(string description, string status)
         {
             Todoitem item = new Todoitem(description, status);
-            context.ToDoItems.Add(item);
+            context.ToDoList.Add(item);
             context.SaveChanges();
         }
 
         public void updateItem(int id, string newDescription, string newStatus)
         {
-            Todoitem oldItem = context.ToDoItems.Where(item => item.Id == id).FirstOrDefault();
+            Todoitem oldItem = context.ToDoList.Where(item => item.Id == id).FirstOrDefault();
 
             oldItem.Description = newDescription;
             oldItem.Status = newStatus;
@@ -40,13 +42,26 @@ namespace Todoapp
             context.SaveChanges();
         }
 
-        public void UpdateItem(Todoitem item)
+        internal List<Todoitem> AddItem()
+        {
+            throw new NotImplementedException();
+        }
+
+        internal List<Todoitem> updateItem()
+        {
+            throw new NotImplementedException();
+        }
 
         public void DeleteItem(int id)
         {
-            ToDoItem toDoItem = context.ToDoItems.Where(item => item.Id == id).FirstOrDefault();
-            context.ToDoItem.Remove(oldItem);
+            Todoitem toDoItem = context.ToDoList.Where(item => item.Id == id).FirstOrDefault();
+            context.Remove(toDoItem);
             context.SaveChanges();
+        }
+
+        internal List<Todoitem> DeleteItem()
+        {
+            throw new NotImplementedException();
         }
     }
 }

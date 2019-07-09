@@ -9,6 +9,7 @@ namespace Todoapp
         public int Id { get; private set; }
         public string Description { get; set; }
         public string Status { get; set; }
+        public DateTime DueDate { get; set; }
 
         public Todoitem(string Description, string Status)
         {
